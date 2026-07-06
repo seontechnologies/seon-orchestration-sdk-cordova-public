@@ -1,0 +1,25 @@
+{
+  "name": "seon-orch-ionic-example",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Example Ionic (Capacitor) app demonstrating the SEON Orchestration Cordova plugin.",
+  "scripts": {
+    "ionic:build": "echo 'Using checked-in www (static example)'",
+    "start": "ionic serve",
+    "build": "ionic build",
+    "ios": "ionic capacitor run ios --livereload --external",
+    "android": "ionic capacitor run android --livereload --external",
+    "sync": "ionic capacitor sync"
+  },
+  "dependencies": {
+    "@ionic/core": "^8.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/ios": "^6.0.0",
+    "@capacitor/android": "^6.0.0",
+    "cordova-plugin-seon-orchestration": "file:../cordova/cordova-plugin-seon-orchestration-1.0.2.tgz"
+  },
+  "devDependencies": {
+    "@ionic/cli": "^7.0.0",
+    "@capacitor/cli": "^6.0.0"
+  }
+}
