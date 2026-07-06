@@ -1,0 +1,33 @@
+{
+  "name": "seon-orch-cordova-example",
+  "version": "0.1.0",
+  "private": true,
+  "main": "www/js/index.js",
+  "description": "Example Cordova app demonstrating the SEON Orchestration plugin.",
+  "scripts": {
+    "generate:launch-assets": "python3 scripts/generate_round_launch.py",
+    "ios": "cordova run ios --device",
+    "ios:signed": "cordova run ios --device --buildConfig=build.json",
+    "android": "cordova run android --device"
+  },
+  "dependencies": {
+    "cordova-android": "^13.0.0",
+    "cordova-ios": "^7.0.0"
+  },
+  "devDependencies": {
+    "cordova": "^13.0.0",
+    "cordova-plugin-seon-orchestration": "file:./cordova-plugin-seon-orchestration-1.0.2.tgz",
+    "ios-deploy": "^1.12.2"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-seon-orchestration": {
+        "SWIFT_VERSION": "5.0"
+      }
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}
